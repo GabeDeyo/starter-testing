@@ -1,0 +1,14 @@
+// _base.scss
+// ==============
+
+//Put core style changes
+
+body {
+  background: lighten($desatBlue, 10%);
+  font-family: $bodyFont;
+}
+ 
+#{headings()} {
+  font-family: $headFont;
+  font-size: 3em;
+}
