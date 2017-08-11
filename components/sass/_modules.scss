@@ -139,24 +139,52 @@ a.animated-button.thar-four:before {
 /* Intro Section */
 
 .middle {
-        height: 100%;
-        width: 100%;
-        font-family: $buttonFont;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	font-family: $buttonFont;
 
-        background: lighten($desatBlue, 10%);
+	background: lighten($desatBlue, 10%);		
 
-        @include top-down-gradient(#fff, #000, 1);
+	@include top-down-gradient(#fff, #000, 1);
 
-        .container {
-                padding-top: 15%;
-        }
+	.container {
+			padding-top: 15%;
+	}
 
-        #intro-web-button {
-                float: right;
-        }
+	#intro-web-button {
+			float: right;
+	}
 
-        #intro-game-button {
-                float: left;
-        }
+	#intro-game-button {
+			float: left;
+	}
+}
+
+.web {
+	z-index: 2;
+
+	#go-right {
+		float: right;
+		padding: 10px;
+		transition: all .25s ease-in-out;
+	}
+	#go-right:hover {
+		padding-right: 20px;
+		background: $desatBlue;
+	}
+}
+
+.game {
+	z-index: 2;
+
+	#go-left {
+		padding: 10px;
+		transition: all .25s ease-in-out;
+	}
+	#go-left:hover {
+		padding-left: 20px;
+		background: $desatBlue;
+	}
 }
 

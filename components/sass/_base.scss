@@ -6,6 +6,8 @@
 body {
   background: lighten($desatBlue, 10%);
   font-family: $bodyFont;
+
+  overflow: hidden;
 }
  
 #{headings()} {
